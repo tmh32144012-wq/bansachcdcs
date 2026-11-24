@@ -1,0 +1,96 @@
+.tet-book-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e7ddd0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.tet-book-card:hover {
+  transform: translateY(-3px);
+  border-color: #cfa968;
+  box-shadow: 0 12px 24px -10px rgba(31, 23, 18, 0.14);
+}
+
+.tet-badge-flash {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: #9b1c1c;
+  color: #fff8eb;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.tet-badge-discount {
+  display: inline-block;
+  width: fit-content;
+  padding: 2px 7px;
+  border-radius: 5px;
+  background: #fdf2f2;
+  border: 1px solid #f5c2c2;
+  color: #9b1c1c;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.tet-badge-condition {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(31, 23, 18, 0.78);
+  color: #fff8eb;
+  font-size: 0.66rem;
+  font-weight: 600;
+}
+
+.tet-wishlist-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #78716c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.18s, background 0.18s, transform 0.18s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tet-wishlist-btn:hover,
+.tet-wishlist-btn.is-active {
+  color: #b91c1c;
+  background: #fff1f2;
+  transform: scale(1.06);
+}
+
+.tet-cart-mini-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: #9b1c1c;
+  color: #fff8eb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: background 0.18s;
+}
+
+.tet-cart-mini-btn:hover:not(:disabled) {
+  background: #7f1d1d;
+}
+
+.tet-cart-mini-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

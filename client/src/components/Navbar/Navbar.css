@@ -1,0 +1,184 @@
+.tet-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: #8c1616;
+  color: #fffbf5;
+  border-bottom: 1px solid rgba(212, 168, 83, 0.55);
+  box-shadow: 0 4px 20px rgba(45, 10, 10, 0.16);
+}
+
+.tet-topbar {
+  background: #670f0f;
+  border-bottom: 1px solid rgba(212, 168, 83, 0.22);
+  padding: 6px 0;
+  color: #f3dca8;
+}
+
+.tet-topbar-link {
+  color: #fdf6e9;
+  transition: color 0.18s;
+}
+
+.tet-topbar-link:hover {
+  color: #f3dca8;
+  text-decoration: underline;
+}
+
+.tet-logo-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #670f0f;
+  border: 1px solid rgba(212, 168, 83, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tet-logo-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.32rem;
+  font-weight: 800;
+  color: #fff8eb;
+  letter-spacing: 0.01em;
+}
+
+.tet-search-form {
+  background: #ffffff;
+  border: 1px solid rgba(212, 168, 83, 0.45);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tet-search-input {
+  flex: 1;
+  padding: 8px 14px;
+  font-size: 0.875rem;
+  color: #1f1712;
+  background: transparent;
+  outline: none;
+}
+
+.tet-search-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 16px;
+  background: #d4a346;
+  color: #2d0d0d;
+  font-weight: 700;
+  font-size: 0.84rem;
+  transition: background 0.18s;
+}
+
+.tet-search-btn:hover {
+  background: #e1b45a;
+}
+
+.tet-nav-pill {
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #fdf6e9;
+  background: rgba(255, 255, 255, 0.09);
+  transition: background 0.18s;
+}
+
+.tet-nav-pill:hover {
+  background: rgba(255, 255, 255, 0.17);
+}
+
+.tet-icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fdf6e9;
+  background: rgba(255, 255, 255, 0.08);
+  transition: background 0.18s, color 0.18s;
+}
+
+.tet-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #f3dca8;
+}
+
+.tet-badge-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: #d4a346;
+  color: #2d0d0d;
+  font-size: 0.68rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #8c1616;
+}
+
+.tet-user-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border-radius: 9px;
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(212, 168, 83, 0.35);
+  color: #fffbf5;
+  transition: background 0.18s;
+}
+
+.tet-user-chip:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.tet-btn-outline {
+  padding: 7px 14px;
+  border-radius: 9px;
+  border: 1px solid rgba(243, 220, 168, 0.65);
+  color: #fff8eb;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: background 0.18s;
+}
+
+.tet-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.tet-btn-gold {
+  padding: 7px 14px;
+  border-radius: 9px;
+  background: #d4a346;
+  color: #2d0d0d;
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: background 0.18s;
+}
+
+.tet-btn-gold:hover {
+  background: #e1b45a;
+}
+
+.tet-notif-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  width: 340px;
+  background: #ffffff;
+  border: 1px solid #e2d4c1;
+  border-radius: 12px;
+  box-shadow: 0 16px 36px rgba(31, 23, 18, 0.18);
+  overflow: hidden;
+  z-index: 60;
+}

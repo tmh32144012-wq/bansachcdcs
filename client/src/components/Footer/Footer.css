@@ -1,0 +1,29 @@
+.tet-footer {
+  margin-top: 4rem;
+  background: #5c1010;
+  color: #f5ead6;
+  border-top: 2px solid #c59b45;
+}
+
+.tet-footer-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e6c67c;
+  margin-bottom: 0.75rem;
+}
+
+.tet-footer-blessing {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 168, 83, 0.35);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.tet-footer-bottom {
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 0.78rem;
+  color: rgba(245, 234, 214, 0.72);
+  border-top: 1px solid rgba(212, 168, 83, 0.2);
+}

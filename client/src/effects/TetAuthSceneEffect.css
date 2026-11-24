@@ -1,0 +1,204 @@
+.tet-auth-scene {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 4;
+}
+
+/* Hào quang Xuân xoay nhẹ sau khung đăng nhập */
+.tet-auth-sunburst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 780px;
+  height: 780px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(251, 191, 36, 0.08) 0deg 10deg,
+    transparent 10deg 20deg
+  );
+  animation: tetSunRotate 48s linear infinite;
+  mask-image: radial-gradient(circle, black 15%, transparent 70%);
+}
+
+@keyframes tetSunRotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Cành hoa đào & hoa mai */
+.tet-auth-branch {
+  position: absolute;
+  top: 0;
+  width: 280px;
+  height: 195px;
+  opacity: 0.92;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35));
+}
+
+.tet-auth-branch-left {
+  left: 0;
+}
+
+.tet-auth-branch-right {
+  right: 0;
+}
+
+/* Đèn lồng đỏ phát sáng */
+.tet-auth-lantern {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: top center;
+  animation: tetAuthLanternSwing 3.8s ease-in-out infinite;
+}
+
+.tet-auth-lantern-left {
+  left: 7%;
+}
+
+.tet-auth-lantern-right {
+  right: 7%;
+  animation-delay: 1.5s;
+}
+
+.tet-auth-lantern-rope {
+  width: 3px;
+  height: 36px;
+  background: linear-gradient(180deg, #f59e0b, #fde68a);
+}
+
+.tet-auth-lantern-cap {
+  width: 34px;
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #b45309, #fef08a, #b45309);
+}
+
+.tet-auth-lantern-globe {
+  width: 74px;
+  height: 62px;
+  border-radius: 50% / 44%;
+  background: radial-gradient(circle at 35% 30%, #f87171, #dc2626 52%, #7f1d1d 100%);
+  border: 2.5px solid #fbbf24;
+  box-shadow: 0 0 32px rgba(245, 158, 11, 0.55), 0 0 54px rgba(220, 38, 38, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 800;
+  font-size: 0.92rem;
+  color: #fef3c7;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.tet-auth-lantern-tassel {
+  width: 9px;
+  height: 44px;
+  border-radius: 0 0 6px 6px;
+  background: repeating-linear-gradient(90deg, #dc2626 0 2px, #fbbf24 2px 4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes tetAuthLanternSwing {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+/* Đôi câu đối 2 bên */
+.tet-auth-couplet {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  padding: 16px 6px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #b91c1c, #7f1d1d);
+  border: 2px solid #fbbf24;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.42);
+  display: flex;
+  justify-content: center;
+}
+
+.tet-auth-couplet span {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #fde68a;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+}
+
+.tet-auth-couplet-left {
+  left: 3.5%;
+}
+
+.tet-auth-couplet-right {
+  right: 3.5%;
+}
+
+/* Các vật phẩm Tết rơi */
+.tet-auth-fall-item {
+  position: absolute;
+  top: -40px;
+  opacity: 0.85;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.35));
+  animation-name: tetAuthFloatFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tetAuthFloatFall {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate3d(42px, 50vh, 0) rotate(180deg);
+  }
+  88% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate3d(-28px, 108vh, 0) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.tet-auth-bottom-glow {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  height: 110px;
+  background: radial-gradient(ellipse at center, rgba(251, 191, 36, 0.25) 0%, transparent 72%);
+}
+
+@media (max-width: 900px) {
+  .tet-auth-couplet,
+  .tet-auth-lantern {
+    display: none;
+  }
+  .tet-auth-branch {
+    width: 170px;
+    height: 120px;
+  }
+}

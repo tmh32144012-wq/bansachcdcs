@@ -1,0 +1,55 @@
+.tet-gold-coin-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 15;
+  overflow: hidden;
+}
+
+.tet-gold-coin {
+  position: absolute;
+  top: -32px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fef08a, #f59e0b 65%, #b45309 100%);
+  border: 1.5px solid #fde68a;
+  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.65;
+  animation-name: tetCoinDrop;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.tet-gold-coin-hole {
+  width: 7px;
+  height: 7px;
+  background: #fffaf0;
+  border: 1px solid #b45309;
+}
+
+@keyframes tetCoinDrop {
+  0% {
+    transform: translateY(0) rotateY(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.7;
+  }
+  85% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateY(105vh) rotateY(540deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tet-gold-coin-layer {
+    display: none;
+  }
+}

@@ -1,0 +1,80 @@
+.tet-lanterns-wrapper {
+  position: fixed;
+  top: 68px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 18px;
+}
+
+.tet-lantern-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: top center;
+  animation: tetLanternSway 4.2s ease-in-out infinite;
+}
+
+.tet-lantern-right {
+  animation-delay: 1.4s;
+}
+
+.tet-lantern-string {
+  width: 2px;
+  height: 22px;
+  background: linear-gradient(180deg, #b45309, #f59e0b);
+}
+
+.tet-lantern-cap {
+  width: 24px;
+  height: 6px;
+  background: linear-gradient(90deg, #b45309, #fde68a, #b45309);
+  border-radius: 3px;
+}
+
+.tet-lantern-body {
+  width: 52px;
+  height: 44px;
+  border-radius: 50% / 44%;
+  background: radial-gradient(circle at 35% 35%, #ef4444, #b91c1c 65%, #7f1d1d 100%);
+  border: 2px solid #f59e0b;
+  box-shadow: 0 0 18px rgba(239, 68, 68, 0.45), inset 0 0 10px rgba(254, 243, 199, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tet-lantern-char {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #fef3c7;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.02em;
+}
+
+.tet-lantern-tassel {
+  width: 6px;
+  height: 28px;
+  margin-top: 2px;
+  border-radius: 0 0 4px 4px;
+  background: repeating-linear-gradient(90deg, #dc2626 0 2px, #f59e0b 2px 3px);
+}
+
+@keyframes tetLanternSway {
+  0%, 100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .tet-lanterns-wrapper {
+    display: none;
+  }
+}

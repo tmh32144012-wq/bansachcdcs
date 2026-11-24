@@ -1,0 +1,72 @@
+.seller-tet-page {
+  min-height: 85vh;
+}
+
+.seller-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 22px 24px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #991b1b, #b91c1c 65%, #7f1d1d);
+  border: 2px solid #f59e0b;
+}
+
+.seller-card {
+  background: #ffffff;
+  border: 1.5px solid rgba(217, 119, 6, 0.35);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 24px -12px rgba(136, 19, 19, 0.14);
+}
+
+.seller-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: #ffffff;
+  color: #7f1d1d;
+  border: 1.5px solid rgba(217, 119, 6, 0.38);
+  transition: all 0.2s;
+}
+
+.seller-tab-btn.is-active {
+  background: linear-gradient(135deg, #b91c1c, #991b1b);
+  color: #fef3c7;
+  border-color: #f59e0b;
+}
+
+.seller-status-badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.seller-status-badge.status-approved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.seller-status-badge.status-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.seller-status-badge.status-rejected,
+.seller-status-badge.status-suspended {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.seller-status-badge.status-hidden {
+  background: #f5f5f4;
+  color: #57534e;
+}

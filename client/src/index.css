@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+    background-color: #faf6f0;
+    color: #1f1712;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, .font-tet-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Nền giấy dó ngà ấm tối giản, tôn bìa sách */
+.tet-bg-pattern {
+  background-color: #faf6f0;
+  background-image: linear-gradient(180deg, #faf6f0 0%, #f7f1e7 100%);
+}
+
+/* Viền ấm tinh tế thay cho viền vàng dày */
+.tet-gold-border {
+  border: 1px solid #e7ddd0;
+  box-shadow: 0 4px 18px -6px rgba(31, 23, 18, 0.08);
+}
+
+/* Thanh cuộn tinh tế tông giấy - sơn mài trầm */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3ece2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5b6a3;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9b1c1c;
+}

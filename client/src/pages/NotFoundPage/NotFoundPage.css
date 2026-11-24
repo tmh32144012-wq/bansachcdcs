@@ -1,0 +1,53 @@
+.notfound-card {
+  background: #ffffff;
+  border: 1px solid #e7ddd0;
+  border-radius: 16px;
+  padding: 40px 28px;
+  box-shadow: 0 8px 28px rgba(31, 23, 18, 0.05);
+}
+
+.notfound-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  background: #fdf2f2;
+  border: 1px solid #f5c2c2;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #9b1c1c;
+  color: #fffaf5;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.notfound-btn-primary:hover {
+  background: #7f1d1d;
+}
+
+.notfound-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #d9cec0;
+  color: #3f2e24;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.notfound-btn-secondary:hover {
+  border-color: #9b1c1c;
+  color: #9b1c1c;
+}

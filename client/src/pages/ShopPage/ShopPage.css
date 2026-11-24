@@ -1,0 +1,25 @@
+.shop-tet-page {
+  min-height: 85vh;
+}
+
+.shop-tet-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 20px 24px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #991b1b, #b91c1c);
+  border: 2px solid #f59e0b;
+  box-shadow: 0 10px 26px rgba(127, 29, 29, 0.2);
+}
+
+.shop-filter-card {
+  background: #ffffff;
+  border: 1.5px solid rgba(217, 119, 6, 0.35);
+  border-radius: 16px;
+  padding: 18px;
+  position: sticky;
+  top: 96px;
+}

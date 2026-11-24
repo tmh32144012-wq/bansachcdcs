@@ -1,0 +1,27 @@
+.cart-tet-page {
+  min-height: 85vh;
+}
+
+.cart-tet-card {
+  background: #ffffff;
+  border: 1px solid #e7ddd0;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 2px 12px rgba(31, 23, 18, 0.04);
+}
+
+.cart-shop-group {
+  background: #ffffff;
+  border: 1px solid #e7ddd0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.cart-shop-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #fbf6ec;
+  border-bottom: 1px solid #ebe0cf;
+}

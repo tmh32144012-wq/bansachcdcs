@@ -1,0 +1,41 @@
+.favorites-tet-page {
+  min-height: 85vh;
+}
+
+.favorites-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 22px 24px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #991b1b, #b91c1c);
+  border: 2px solid #f59e0b;
+}
+
+.favorites-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fef3c7;
+  background: rgba(69, 10, 10, 0.45);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+}
+
+.favorites-tab-btn.is-active {
+  background: #fde68a;
+  color: #5c0b0b;
+  border-color: #fde68a;
+}
+
+.favorites-shop-card {
+  background: #ffffff;
+  border: 1.5px solid rgba(217, 119, 6, 0.35);
+  border-radius: 16px;
+  padding: 16px;
+}

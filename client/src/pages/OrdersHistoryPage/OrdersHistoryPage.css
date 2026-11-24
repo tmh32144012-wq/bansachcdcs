@@ -1,0 +1,94 @@
+.orders-tet-page {
+  min-height: 85vh;
+}
+
+.orders-card {
+  background: #ffffff;
+  border: 1.5px solid rgba(217, 119, 6, 0.35);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 24px -12px rgba(136, 19, 19, 0.16);
+}
+
+.orders-stepper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.orders-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  opacity: 0.45;
+}
+
+.orders-step.is-done {
+  opacity: 1;
+}
+
+.orders-step-dot {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #e7e5e4;
+  color: #57534e;
+  font-size: 0.72rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orders-step.is-done .orders-step-dot {
+  background: linear-gradient(135deg, #b91c1c, #d97706);
+  color: #fef3c7;
+  box-shadow: 0 3px 10px rgba(185, 28, 28, 0.3);
+}
+
+.orders-step-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #7f1d1d;
+}
+
+.orders-timeline-box {
+  background: #fffaf0;
+  border: 1.5px solid #fcd34d;
+  border-radius: 14px;
+  padding: 16px 18px;
+}
+
+.orders-timeline-list {
+  position: relative;
+  padding-left: 22px;
+  border-left: 2px dashed #d97706;
+  margin-left: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.orders-timeline-item {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.orders-timeline-node {
+  position: absolute;
+  left: -30px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #fbbf24;
+  border: 2px solid #991b1b;
+}
+
+.orders-timeline-item.is-latest .orders-timeline-node {
+  background: #dc2626;
+  border-color: #fde68a;
+  box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.22);
+}

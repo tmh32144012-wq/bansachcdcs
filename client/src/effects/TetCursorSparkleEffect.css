@@ -1,0 +1,28 @@
+.tet-cursor-sparkle-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 80;
+  overflow: hidden;
+}
+
+.tet-cursor-sparkle {
+  position: fixed;
+  color: #fde047;
+  font-size: 0.78rem;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.9), 0 0 14px rgba(239, 68, 68, 0.7);
+  transform: translate(-50%, -50%);
+  animation: tetSparkleFade 0.7s ease-out forwards;
+  user-select: none;
+}
+
+@keyframes tetSparkleFade {
+  0% {
+    opacity: 0.95;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(0.25) rotate(90deg);
+  }
+}

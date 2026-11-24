@@ -1,0 +1,22 @@
+.vendor-shop-page {
+  min-height: 85vh;
+}
+
+.vendor-shop-banner {
+  background: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 60%, #991b1b 100%);
+  border: 2px solid #f59e0b;
+  border-radius: 22px;
+  padding: 26px;
+  box-shadow: 0 14px 30px rgba(127, 29, 29, 0.24);
+}
+
+.vendor-voucher-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #fffbeb;
+  border: 1.5px dashed #b91c1c;
+  border-radius: 14px;
+  padding: 12px 14px;
+}

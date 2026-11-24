@@ -1,0 +1,66 @@
+.tet-lixi-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 15;
+  overflow: hidden;
+}
+
+.tet-lixi-float {
+  position: absolute;
+  bottom: -60px;
+  width: 28px;
+  height: 40px;
+  border-radius: 4px;
+  background: linear-gradient(160deg, #dc2626, #991b1b);
+  border: 1.5px solid #f59e0b;
+  box-shadow: 0 4px 12px rgba(153, 27, 27, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.55;
+  animation-name: tetLixiRise;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.tet-lixi-flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 11px;
+  border-bottom: 1.5px solid #fbbf24;
+  border-radius: 0 0 14px 14px;
+}
+
+.tet-lixi-seal {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #fde68a;
+  margin-top: 6px;
+}
+
+@keyframes tetLixiRise {
+  0% {
+    transform: translateY(0) rotate(-8deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.45;
+  }
+  100% {
+    transform: translateY(-108vh) rotate(12deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .tet-lixi-layer {
+    display: none;
+  }
+}
